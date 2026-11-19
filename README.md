@@ -1,6 +1,6 @@
 # LeerIA · página del proyecto
 
-Página de presentación de LeerIA, el proyecto de el Instituto IES 9-023 (Mendoza) para evaluar la fluidez lectora con ayuda de la inteligencia artificial.
+Página de presentación de LeerIA, el proyecto del Instituto IES 9-023 (Mendoza) para evaluar la fluidez lectora con ayuda de la inteligencia artificial.
 
 Es un sitio estático (HTML, CSS y JavaScript, sin dependencias ni compilación) pensado para GitHub Pages.
 
