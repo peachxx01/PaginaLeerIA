@@ -40,11 +40,7 @@
         <h1>Leer mejor, <span class="grad">alumno por alumno</span>.</h1>
         <p class="lead">LeerIA graba la lectura en voz alta desde el navegador y ayuda a la docente a medir velocidad, precisión y pausas, sin planillas ni cronómetro.</p>
         <div class="hero-actions">
-          <button class="btn btn-primary" id="pitch-start" type="button">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-            Escuchar el pitch
-          </button>
-          <a class="btn btn-ghost" href="#demo">Probar la evaluación</a>
+          <a class="btn btn-primary" href="#demo">Probar la evaluación</a>
         </div>
         <p class="team"><strong>Equipo:</strong> Joel, Jazmín, Cecilia, Fernando, Anabel y Matías.</p>
       </div>
@@ -236,21 +232,6 @@
   <footer class="footer">
     <p>LeerIA · Escuela Maipú, Mendoza · Proyecto acompañado por Lab Superior</p>
   </footer>
-
-  <!-- Reproductor del pitch -->
-  <div id="player" class="player" hidden role="region" aria-label="Lectura del pitch">
-    <div class="player-progress"><span id="player-bar"></span></div>
-    <div class="player-body">
-      <p class="player-label" id="player-label">Apertura</p>
-      <p class="player-caption" id="player-caption" aria-live="polite"></p>
-    </div>
-    <div class="player-controls">
-      <button type="button" id="p-prev" aria-label="Parte anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>
-      <button type="button" id="p-toggle" class="p-main" aria-label="Pausar"><svg viewBox="0 0 24 24" aria-hidden="true" id="p-icon"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button>
-      <button type="button" id="p-next" aria-label="Parte siguiente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></button>
-      <button type="button" id="p-close" aria-label="Cerrar lectura"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
-    </div>
-  </div>
 
   <script src="app.js"></script>
 </body>

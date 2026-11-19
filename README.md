@@ -6,7 +6,6 @@ Es un sitio estático (HTML, CSS y JavaScript, sin dependencias ni compilación)
 
 ## Qué incluye
 
-- **Lectura del pitch**: el botón "Escuchar el pitch" lee el texto de la presentación con la voz del navegador, muestra subtítulos y va desplazando la página hasta cada sección. Si el navegador no tiene voz en español, funciona como teleprompter.
 - **Demo de la evaluación**: compara un texto con lo que leyó un alumno usando el mismo algoritmo de alineación de la aplicación (`src/reading.js`) y calcula PPM, PPCM y precisión.
 - Secciones del pitch: apertura, problema, solución, el camino y cierre, más un resumen técnico.
 
@@ -16,7 +15,7 @@ Es un sitio estático (HTML, CSS y JavaScript, sin dependencias ni compilación)
 |---|---|
 | `index.html` | Contenido de la página |
 | `styles.css` | Estilos (colores del logo, tipografía Nunito como la app) |
-| `app.js` | Lectura del pitch y demo de alineación |
+| `app.js` | Demo de alineación |
 | `assets/logo.jpg` | Logo |
 | `.nojekyll` | Le indica a GitHub Pages que publique los archivos tal cual |
 
