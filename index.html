@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LeerIA · Fluidez lectora para niños</title>
+  <meta name="description" content="LeerIA: una aplicación web que registra la lectura en voz alta de los alumnos y ayuda a los docentes a evaluar la fluidez lectora. Proyecto de la escuela Maipú, Mendoza.">
+  <meta property="og:title" content="LeerIA · Fluidez lectora para niños">
+  <meta property="og:description" content="Inteligencia artificial y un micrófono para devolverle tiempo al docente.">
+  <meta property="og:image" content="assets/logo.jpg">
+  <meta name="theme-color" content="#1f7fa8">
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#problema">Saltar al contenido</a>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="LeerIA, inicio">
+      <img src="assets/logo.jpg" alt="" width="40" height="40">
+      <span>LeerIA</span>
+    </a>
+    <nav aria-label="Secciones">
+      <a href="#problema">Problema</a>
+      <a href="#solucion">Solución</a>
+      <a href="#demo">Probalo</a>
+      <a href="#camino">El camino</a>
+      <a href="#tecnica">Por dentro</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1 · Apertura -->
+    <section id="inicio" class="hero" data-pitch="0">
+      <div class="hero-text">
+        <p class="eyebrow">Escuela Maipú · Mendoza</p>
+        <h1>Leer mejor, <span class="grad">alumno por alumno</span>.</h1>
+        <p class="lead">LeerIA graba la lectura en voz alta desde el navegador y ayuda a la docente a medir velocidad, precisión y pausas, sin planillas ni cronómetro.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" id="pitch-start" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            Escuchar el pitch
+          </button>
+          <a class="btn btn-ghost" href="#demo">Probar la evaluación</a>
+        </div>
+        <p class="team"><strong>Equipo:</strong> Joel, Jazmín, Cecilia, Fernando, Anabel y Matías.</p>
+      </div>
+      <div class="hero-art">
+        <img src="assets/logo.jpg" alt="Logo de LeerIA: una lamparita sonriente sobre un libro abierto, con flechas que suben. Fluidez lectora para niños." width="1408" height="768">
+      </div>
+    </section>
+
+    <!-- 2 · Problema -->
+    <section id="problema" class="section" data-pitch="1">
+      <div class="section-head">
+        <p class="eyebrow">El problema</p>
+        <h2>Hoy la fluidez lectora se evalúa a mano.</h2>
+        <p>En un aula de Mendoza, la docente escucha a cada chico y, al mismo tiempo, anota todo esto. Alumno por alumno.</p>
+      </div>
+      <ul class="cards four">
+        <li class="card">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3zM5 11a7 7 0 0 0 14 0M12 18v3"/></svg></span>
+          <h3>Escuchar</h3><p>Cada lectura completa, de cada estudiante del curso.</p>
+        </li>
+        <li class="card">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h7M17 15l4 4m0-4-4 4"/></svg></span>
+          <h3>Detectar errores</h3><p>Palabras omitidas, sustituidas o mal pronunciadas.</p>
+        </li>
+        <li class="card">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg></span>
+          <h3>Medir velocidad</h3><p>Con cronómetro en mano, palabras por minuto.</p>
+        </li>
+        <li class="card">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h3l2-5 3 10 3-7 2 2h5"/></svg></span>
+          <h3>Observar pausas</h3><p>Si respeta la puntuación, la entonación y el fraseo.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 3 · Solución -->
+    <section id="solucion" class="section tint" data-pitch="2">
+      <div class="section-head">
+        <p class="eyebrow">La solución</p>
+        <h2>Un micrófono, un navegador y tres pasos.</h2>
+        <p>LeerIA usa la computadora o la tablet del aula. No hace falta instalar nada.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <span class="step-n">1</span>
+          <h3>El estudiante lee</h3>
+          <p>Entra con el código de su clase, toca su nombre y escribe su PIN. Elige el texto asignado y graba su lectura en voz alta.</p>
+        </li>
+        <li>
+          <span class="step-n">2</span>
+          <h3>La IA analiza</h3>
+          <p>El sistema alinea lo leído con el texto y propone qué palabras fueron correctas, omitidas o cambiadas. Calcula velocidad y precisión.</p>
+        </li>
+        <li>
+          <span class="step-n">3</span>
+          <h3>La docente acompaña</h3>
+          <p>Escucha el audio, confirma o corrige la propuesta y publica la devolución. Sigue el progreso del curso y de cada alumno.</p>
+        </li>
+      </ol>
+      <p class="callout"><strong>La última palabra la tiene la docente.</strong> El algoritmo sugiere; no diagnostica ni publica nada por su cuenta.</p>
+    </section>
+
+    <!-- Demo interactiva -->
+    <section id="demo" class="section">
+      <div class="section-head">
+        <p class="eyebrow">Probalo</p>
+        <h2>Así compara LeerIA lo esperado con lo leído.</h2>
+        <p>Es el mismo algoritmo de alineación que usa la aplicación (distancia de edición de Levenshtein), en tu navegador. Cambiá lo que leyó el alumno y mirá cómo se actualiza.</p>
+      </div>
+
+      <div class="demo">
+        <div class="demo-inputs">
+          <label for="d-expected">Texto del docente</label>
+          <textarea id="d-expected" rows="3">El zorro corría por el bosque buscando algo para comer antes de que llegara la noche.</textarea>
+
+          <label for="d-spoken">Lo que leyó el alumno <span class="hint">(transcripción revisada)</span></label>
+          <textarea id="d-spoken" rows="3">El zorro corría por el el bosque buscaba algo para comer antes que llegara la noche.</textarea>
+
+          <label for="d-seconds">Tiempo de lectura</label>
+          <div class="range-row">
+            <input id="d-seconds" type="range" min="3" max="40" value="9" step="1">
+            <output id="d-seconds-out" for="d-seconds">9 s</output>
+          </div>
+          <p id="d-error" class="demo-error" role="alert" hidden></p>
+        </div>
+
+        <div class="demo-output">
+          <div class="metrics" aria-live="polite">
+            <div class="metric"><span class="m-value" id="m-ppm">–</span><span class="m-label">PPM<small>palabras por minuto</small></span></div>
+            <div class="metric"><span class="m-value" id="m-ppcm">–</span><span class="m-label">PPCM<small>correctas por minuto</small></span></div>
+            <div class="metric"><span class="m-value" id="m-acc">–</span><span class="m-label">Precisión<small>sobre el texto</small></span></div>
+          </div>
+          <p class="legend">
+            <span class="tok ok">correcta</span>
+            <span class="tok sub">sustitución</span>
+            <span class="tok omi">omisión</span>
+            <span class="tok ins">inserción</span>
+          </p>
+          <div id="d-tokens" class="tokens" aria-label="Alineación propuesta"></div>
+          <p class="demo-note">Esto es una <strong>propuesta</strong>. En LeerIA la docente escucha el audio y decide si una inserción fue una repetición, una autocorrección o un fragmento, y confirma el tiempo de inicio y fin antes de publicar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · El camino -->
+    <section id="camino" class="section tint" data-pitch="3">
+      <div class="section-head">
+        <p class="eyebrow">El camino</p>
+        <h2>No apareció de un día para el otro.</h2>
+      </div>
+      <ol class="timeline">
+        <li>
+          <span class="dot" aria-hidden="true"></span>
+          <h3>Primera versión</h3>
+          <p>Simple y funcional: ya medía palabras por minuto, precisión, expresividad y pausas. Su aspecto era muy básico.</p>
+        </li>
+        <li>
+          <span class="dot" aria-hidden="true"></span>
+          <h3>Con el acompañamiento de Lab Superior</h3>
+          <p>Una mejora visual enorme y un salto en la calidad del sistema: base de datos PostgreSQL, audios privados y revisión docente con historial.</p>
+        </li>
+        <li>
+          <span class="dot" aria-hidden="true"></span>
+          <h3>Panel institucional</h3>
+          <p>La docente crea textos, arma sus clases, imprime tarjetas con PIN y código QR para cada alumno y sigue el progreso de forma clara.</p>
+        </li>
+        <li class="next">
+          <span class="dot" aria-hidden="true"></span>
+          <h3>Próximo: piloto en el aula</h3>
+          <p>Probarlo con alumnos reales en la escuela, aprender de las docentes y seguir mejorando.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Por dentro -->
+    <section id="tecnica" class="section">
+      <div class="section-head">
+        <p class="eyebrow">Por dentro</p>
+        <h2>Cómo está hecho.</h2>
+        <p>Una aplicación web completa, pensada para la escuela y para cuidar los datos de chicos y chicas.</p>
+      </div>
+
+      <div class="flow" role="list" aria-label="Recorrido de una lectura">
+        <div class="flow-step" role="listitem"><b>Graba</b><span>El navegador prepara el audio en WAV mono.</span></div>
+        <div class="flow-step" role="listitem"><b>Guarda</b><span>El servidor lo valida y lo guarda en un almacenamiento privado.</span></div>
+        <div class="flow-step" role="listitem"><b>Transcribe</b><span>La docente escucha y corrige la transcripción.</span></div>
+        <div class="flow-step" role="listitem"><b>Alinea</b><span>El sistema propone la correspondencia palabra por palabra.</span></div>
+        <div class="flow-step" role="listitem"><b>Publica</b><span>La docente aprueba y el alumno ve su devolución.</span></div>
+      </div>
+
+      <div class="tech-grid">
+        <article class="card">
+          <h3>Tecnología</h3>
+          <ul class="chips">
+            <li>Node.js</li><li>Express</li><li>EJS</li><li>PostgreSQL</li><li>Supabase Storage</li><li>Vercel</li><li>Node test runner</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Qué mide</h3>
+          <ul class="plain">
+            <li><b>PPM</b> y <b>PPCM</b>: palabras y palabras correctas por minuto.</li>
+            <li><b>Precisión</b> inicial y final (antes y después de autocorregirse).</li>
+            <li>Prosodia: pausas, entonación, fraseo y observaciones.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Cuidado de los datos</h3>
+          <ul class="plain">
+            <li>Audios privados, con enlaces que vencen a los cinco minutos.</li>
+            <li>Las grabaciones se borran a los 90 días.</li>
+            <li>Contraseñas y PIN cifrados; protección contra abusos.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5 · Cierre -->
+    <section id="cierre" class="closing" data-pitch="4">
+      <img src="assets/logo.jpg" alt="" width="1408" height="768" class="closing-logo">
+      <blockquote>
+        <p>LeerIA le devuelve tiempo al docente para lo que más importa: <strong>acompañar a cada alumno a leer mejor.</strong></p>
+      </blockquote>
+      <p class="closing-sub">Crear algo es solo el comienzo. Lo importante es compartirlo, aprender de los demás y descubrir hasta dónde podemos llegar.</p>
+      <p class="closing-team">Joel · Jazmín · Cecilia · Fernando · Anabel · Matías</p>
+      <p class="closing-thanks">¡Muchas gracias!</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>LeerIA · Escuela Maipú, Mendoza · Proyecto acompañado por Lab Superior</p>
+  </footer>
+
+  <!-- Reproductor del pitch -->
+  <div id="player" class="player" hidden role="region" aria-label="Lectura del pitch">
+    <div class="player-progress"><span id="player-bar"></span></div>
+    <div class="player-body">
+      <p class="player-label" id="player-label">Apertura</p>
+      <p class="player-caption" id="player-caption" aria-live="polite"></p>
+    </div>
+    <div class="player-controls">
+      <button type="button" id="p-prev" aria-label="Parte anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>
+      <button type="button" id="p-toggle" class="p-main" aria-label="Pausar"><svg viewBox="0 0 24 24" aria-hidden="true" id="p-icon"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button>
+      <button type="button" id="p-next" aria-label="Parte siguiente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></button>
+      <button type="button" id="p-close" aria-label="Cerrar lectura"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
